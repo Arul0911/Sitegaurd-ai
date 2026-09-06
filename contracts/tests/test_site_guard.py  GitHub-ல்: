@@ -1,0 +1,10 @@
+from contracts.site_guard import SiteGuard
+
+
+def test_initial_state():
+    contract = SiteGuard()
+
+    assert contract.decision == "NOT_REVIEWED"
+    assert contract.project_name == ""
+    assert contract.milestone == ""
+    assert contract.evidence == ""
